@@ -93,21 +93,21 @@
   &:hover {
     color: $white;
     background-color: $blue;
-
-    &::before {
-      transition: $t05;
-      background-color: $white;
-    }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -5px;
-    top: 25px;
+  &--active {
+    color: $white;
     background-color: $blue;
-    height: 1px;
-    width: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 25px;
+      background-color: $white;
+      height: 1px;
+      width: 25px;
+    }
   }
 }
 

@@ -27,10 +27,6 @@ export default {
   <section class="about">
     <div class="container">
       <h2 class="about__title">О нас</h2>
-      <h3 class="about__subtitle">Юридическая информация</h3>
-      <ul class="about__about-list about__about-list--legal">
-        <li class="about__legal-item" v-for="li in legalInfo" v-bind:key="li">{{ li }}</li>
-      </ul>
       <h3 class="about__subtitle">Общая информация</h3>
       <article class="about__general-info">
         <p>Стоматология ООО "АвиценнА" работает в соответствии с Постановлением Правительства РФ от 4 октября 2012 г. N 1006 "Об утверждении Правил предоставления медицинскими организациями платных медицинских услуг".</p>
@@ -39,6 +35,10 @@ export default {
         <p>Медицинские услуги оказываются в форме устной консультации, обсуждения результатов диагностики, непосредственного инструментального воздействия на больные органы пациента с целью их лечения, назначения медикаментозных препаратов для последующей медицинской реабилитации.</p>
         <p>Оплата за медицинские услуги производится непосредственно администратору (в случае его отсутствия непосредственно врачу) наличными денежными средствами с получением квитанции.</p>
       </article>
+      <h3 class="about__subtitle">Юридическая информация</h3>
+      <ul class="about__about-list about__about-list--legal">
+        <li class="about__legal-item" v-for="li in legalInfo" v-bind:key="li">{{ li }}</li>
+      </ul>
       <!-- <h3 class="about__subtitle">О мед.помощи</h3>
       <p class="about__description">В рамках Программы (за исключением медицинской помощи, оказываемой в рамках клинической апробации) бесплатно предоставляются:</p>
       <ul class="about__about-list about__about-list--help">

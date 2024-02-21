@@ -43,7 +43,9 @@ export default {
             v-bind:key="li">
           <router-link :to="li.href"
                         class="main-nav__nav-link"
-                        v-on:click="openMenu()">{{ li.name }}
+                        active-class="main-nav__nav-link--active"
+                        v-on:click="openMenu()">
+                        {{ li.name }}
           </router-link>
         </li>
       </ul>

@@ -2,6 +2,16 @@
 export default {
   data() {
     return {
+      locationList: [
+        {
+          adress: 'г. Таганрог, ул. Ленина, д. 190',
+          phone: '+7 (918) 566-20-20',
+        },
+        {
+          adress: 'г. Таганрог, ул. П. Тольятти, д. 26',
+          phone: '+7 (918) 581-71-71',
+        },
+      ],
       // socialList: [
       //   {
       //     name: 'Вконтакте',
@@ -28,11 +38,11 @@ export default {
         </li>
       </ul> -->
       <article class="main-footer__info">
-        <h4 class="main-footer__title">Можете найти нас по адресу:</h4>
-        <p class="main-footer__adress">г. Таганрог, ул. Ленина, д. 190</p>
-        <a class="main-footer__phone" href="tel:+7 (918) 566-20-20">+7 (918) 566-20-20</a>
-        <p class="main-footer__adress">г. Таганрог, ул. П. Тольятти, д. 26</p>
-        <a class="main-footer__phone" href="tel:+7 (918) 581-71-71">+7 (918) 581-71-71</a>
+        <h4 class="main-footer__title">Мы находимся по адресу:</h4>
+        <article class="main-footer__location" v-for="location in locationList" v-bind:key="location">
+          <p class="main-footer__adress">{{ location.adress }}</p>
+          <a class="main-footer__phone" :href="`tel:${location.phone}`">{{ location.phone }}</a>
+        </article>
         <p class="main-footer__copyright">© Стоматология ООО "АвиценнА"</p>
       </article>
     </div>
