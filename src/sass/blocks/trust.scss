@@ -1,0 +1,49 @@
+.trust {
+  background-color: $grey1;
+}
+
+.trust__title {
+  color: $darkblue;
+  margin: 10px auto 30px auto;
+  width: max-content;
+}
+
+.trust__info {
+  position: relative;
+  background-color: $white;
+  padding: 55px 10px 10px 10px;
+
+  &+.trust__info {
+    margin-top: 20px;
+  }
+
+  &::before {
+    font-size: 25px;
+    top: 20px;
+    left: 15px;
+    color: $blue;
+    position: absolute;
+  }
+
+  &--one {
+    &::before {
+      content: "1";
+    }
+  }
+
+  &--two {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--three {
+    &::before {
+      content: "3";
+    }
+  }
+}
+
+.trust__description {
+  margin-top: 10px;
+}

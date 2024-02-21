@@ -1,0 +1,23 @@
+.specialists__title {
+  color: $darkblue;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.specialists__description {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.specialists__specialist-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.specialists__specialist-description {
+  margin-top: 10px;
+}

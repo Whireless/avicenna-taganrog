@@ -1,0 +1,22 @@
+@import "variables.scss";
+@import "animations.scss";
+@import "global.scss";
+@import "container.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-footer.scss";
+
+// Главная
+
+@import "blocks/intro.scss";
+@import "blocks/services.scss";
+@import "blocks/trust.scss";
+@import "blocks/specialists.scss";
+
+// О нас
+
+@import "blocks/about.scss";
+
+// График работы
+
+@import "blocks/worktime.scss";
