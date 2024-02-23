@@ -1,20 +1,14 @@
 <script>
-export default {
-  data() {
-    return {
-      legalInfo: [
-        'ООО "АвиценнА"',
-        'ИНН 6154103769',
-        'КПП 615401001',
-        'Свидетельство о государственной регистрации юридического лица серия 61 №006355492',
-        'ОГРН 1066154098526 от 25.07.2006г. выд. Инспекцией Федеральной налоговой службы по г.Таганрогу Ростовской области.',
-        'ОКПО 97788638',
-        'ОКВЭД 85.13',
-        'Директор - Зуев Константин Евгеньевич',
-      ],
-    }
+  import { useGlobalStore } from '../store';
+
+  export default {
+    setup() {
+      const { legalInfo } = useGlobalStore();
+      return {
+        legalInfo,
+      }
+    },
   }
-}
 </script>
 
 <template>
@@ -31,7 +25,7 @@ export default {
       </article>
       <h3 class="about__subtitle">Юридическая информация</h3>
       <ul class="about__about-list about__about-list--legal">
-        <li class="about__legal-item" v-for="li in legalInfo" v-bind:key="li">{{ li }}</li>
+        <li class="about__legal-item" v-for="li in legalInfo" :key="li">{{ li }}</li>
       </ul>
     </div>
   </section>

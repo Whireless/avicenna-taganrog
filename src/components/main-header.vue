@@ -1,56 +1,39 @@
 <script>
-export default {
-  data() {
-    return {
-      navList: [
-        {
-          href: '/home',
-          name: 'Главная',
-        },
-        {
-          href: '/about',
-          name: 'О нас',
-        },
-        {
-          href: '/worktime',
-          name: 'График работы',
-        },
-      ],
-    }
-  },
-  methods: {
-    openMenu() {
-      const page = document.querySelector('body');
-      const nav = page.querySelector('.main-nav__nav-list');
-      nav.classList.toggle('main-nav__nav-list--open');
-      nav.classList.contains('main-nav__nav-list--open') ? page.style.overflow = 'hidden' : page.removeAttribute('style');
+  import { useGlobalStore } from '../store';
+  import { storeToRefs } from 'pinia';
+
+  export default {
+    setup() {
+      const { menu } = storeToRefs(useGlobalStore());
+      const { navList, mobileMenu } = useGlobalStore();
+      return {
+        menu,
+        navList,
+        mobileMenu,
+      }
     },
-    closeMenu() {
-      document.querySelector('.main-nav__nav-list').classList.remove('main-nav__nav-list--open');
-    },
-  },
-}
+  }
 </script>
 
 <template>
   <header class="main-header">
     <nav class="main-nav">
-      <router-link to="/home" class="main-nav__logo" aria-label="Логотип нашей стоматологии" v-on:click="closeMenu()"></router-link>
+      <router-link to="/home" class="main-nav__logo" aria-label="Логотип нашей стоматологии" @click="mobileMenu(true)"></router-link>
       <p class="main-nav__title">АвиценнА</p>
-      <ul class="main-nav__nav-list">
+      <ul :class="['main-nav__nav-list', menu.status === 1 ? menu.navClass : '']">
         <li class="main-nav__nav-item"
             v-for="li in navList"
-            v-bind:key="li">
+            :key="li">
           <router-link :to="li.href"
                         class="main-nav__nav-link"
                         active-class="main-nav__nav-link--active"
-                        v-on:click="closeMenu()">
+                        @click="mobileMenu()">
                         {{ li.name }}
           </router-link>
         </li>
       </ul>
       <button class="main-nav__button"
-              v-on:click="openMenu()"
+              @click="mobileMenu()"
               type="button"
               aria-label="Открыть меню">
         <span class="main-nav__button-elem"></span>

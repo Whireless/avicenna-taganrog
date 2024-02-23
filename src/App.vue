@@ -1,13 +1,13 @@
 <script>
-import mainHeader from './components/main-header.vue';
-import mainFooter from './components/main-footer.vue';
+  import mainHeader from './components/main-header.vue';
+  import mainFooter from './components/main-footer.vue';
 
-export default {
-  components: {
-    mainHeader,
-    mainFooter,
-  },
-}
+  export default {
+    components: {
+      mainHeader,
+      mainFooter,
+    },
+  }
 </script>
 
 <template>

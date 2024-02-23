@@ -1,24 +1,14 @@
 <script>
-export default {
-  data() {
-    return {
-      advantageList: [
-        {
-          text: 'Команда квалифицированных специалистов',
-          class: 'intro__advantages-item--team',
-        },
-        {
-          text: 'Сеть стоматологических клиник',
-          class: 'intro__advantages-item--offices',
-        },
-        {
-          text: 'Удобное расположение',
-          class: 'intro__advantages-item--geo',
-        },
-      ],
-    }
+  import { useGlobalStore } from '/src/store';
+
+  export default {
+    setup() {
+      const { advantagesList } = useGlobalStore();
+      return {
+        advantagesList,
+      }
+    },
   }
-}
 </script>
 
 <template>
@@ -32,7 +22,7 @@ export default {
       </article>
       <article class="intro__advantages">
         <ul class="intro__advantages-list">
-          <li :class="['intro__advantages-item', li.class]" v-for="li in advantageList" v-bind:key="li">{{ li.text }}</li>
+          <li :class="['intro__advantages-item', li.class]" v-for="li in advantagesList" :key="li">{{ li.text }}</li>
         </ul>
       </article>
     </div>
