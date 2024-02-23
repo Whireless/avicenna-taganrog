@@ -1,5 +1,13 @@
 .about {
-  margin-top: 68px;
+  margin-top: 71px;
+
+  @media (min-width: $tablet) {
+    margin-top: 81px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 101px;
+  }
 }
 
 .about__title {
@@ -12,6 +20,10 @@
   width: max-content;
   margin: 0 auto;
   margin-top: 25px;
+
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+  }
 }
 
 .about__about-list {
@@ -21,10 +33,9 @@
   list-style: none;
   margin-top: 20px;
 
-  // &--help {
-  //   padding-left: 20px;
-  //   list-style: circle;
-  // }
+  @media (min-width: $desktop) {
+    margin-top: 25px;
+  }
 }
 
 .about__general-info {
@@ -33,6 +44,11 @@
   flex-direction: column;
   row-gap: 15px;
   margin-top: 20px;
+
+  @media (min-width: $desktop) {
+    margin-top: 25px;
+    row-gap: 20px;
+  }
 }
 
 .about__description {

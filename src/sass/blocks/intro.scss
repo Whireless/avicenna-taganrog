@@ -4,6 +4,14 @@
   background-position: 70%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet) {
+    margin-top: 81px;
+  }
+
+  @media (min-width: $desktop) {
+   margin-top: 101px;
+  }
 }
 
 .intro__title {
@@ -29,10 +37,18 @@
   font-weight: 700;
   color: $darkblue;
   margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 15px;
+  }
 }
 
 .intro__description {
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+  }
 }
 
 .intro__go-heal {
@@ -63,14 +79,19 @@
   align-items: center;
   row-gap: 15px;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .intro__advantages-item {
   text-align: center;
   position: relative;
-  padding: 50px 20px 15px 20px;
   background-color: rgb(100%, 100%, 100%, 0.9);
   width: 290px;
+  padding: 50px 20px 15px 20px;
 
   &::before {
     content: "";
@@ -98,6 +119,26 @@
   &--geo {
     &::before {
       background-image: url("/src/icons/geo.svg");
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+    width: 170px;
+    height: 70px;
+
+    &::before {
+      left: 90px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 17px;
+    width: 300px;
+    height: 55px;
+
+    &::before {
+      left: 150px;
     }
   }
 }

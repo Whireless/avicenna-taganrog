@@ -36,7 +36,7 @@ export default {
   <header class="main-header">
     <nav class="main-nav">
       <router-link to="/home" class="main-nav__logo" aria-label="Логотип нашей стоматологии" v-on:click="closeMenu()"></router-link>
-      <p class="main-nav__dental">АвиценнА</p>
+      <p class="main-nav__title">АвиценнА</p>
       <ul class="main-nav__nav-list">
         <li class="main-nav__nav-item"
             v-for="li in navList"
@@ -44,7 +44,7 @@ export default {
           <router-link :to="li.href"
                         class="main-nav__nav-link"
                         active-class="main-nav__nav-link--active"
-                        v-on:click="openMenu()">
+                        v-on:click="closeMenu()">
                         {{ li.name }}
           </router-link>
         </li>

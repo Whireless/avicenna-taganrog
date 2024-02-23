@@ -9,9 +9,12 @@
 }
 
 .trust__info {
+  text-align: justify;
   position: relative;
   background-color: $white;
-  padding: 55px 10px 10px 10px;
+  width: 309px;
+  margin: 0 auto;
+  padding: 55px 13px 13px 13px;
 
   &+.trust__info {
     margin-top: 20px;
@@ -19,8 +22,9 @@
 
   &::before {
     font-size: 25px;
-    top: 20px;
+    line-height: 28px;
     left: 15px;
+    top: 20px;
     color: $blue;
     position: absolute;
   }
@@ -42,8 +46,31 @@
       content: "3";
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 628px;
+    padding: 70px 20px 20px 20px;
+
+    &::before {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--one {
+      margin: 0 auto 0 0;
+    }
+
+    &--three {
+      margin: 0 0 0 auto;
+    }
+  }
 }
 
 .trust__description {
   margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
 }

@@ -37,14 +37,16 @@ export default {
           <a :href="li.href" :class="['main-footer__social-link', li.class]" :aria-label="li.name"></a>
         </li>
       </ul> -->
-      <article class="main-footer__info">
-        <h4 class="main-footer__title">Мы находимся по адресу:</h4>
-        <article class="main-footer__location" v-for="location in locationList" v-bind:key="location">
-          <p class="main-footer__adress">{{ location.adress }}</p>
-          <a class="main-footer__phone" :href="`tel:${location.phone}`">{{ location.phone }}</a>
+      <section class="main-footer__info">
+        <article class="main-footer__geo-info">
+          <article class="main-footer__location" v-for="location in locationList" v-bind:key="location">
+            <p class="main-footer__adress">{{ location.adress }}</p>
+            <a class="main-footer__phone" :href="`tel:${location.phone}`">{{ location.phone }}</a>
+          </article>
         </article>
         <p class="main-footer__copyright">© Стоматология ООО "АвиценнА"</p>
-      </article>
+      </section>
+      <span class="main-footer__dev">dev: <a href="https://github.com/Whireless" title="Разработчик">whireless</a></span>
     </div>
   </footer>
 </template>

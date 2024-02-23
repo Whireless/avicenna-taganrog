@@ -24,10 +24,47 @@
 // }
 
 .main-footer__info {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-footer__geo-info {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  // margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 25px;
+  }
+}
+
+.main-footer__location {
+  position: relative;
+  padding: 5px 5px 5px 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('/src//icons/geo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      top: 10px;
+    }
+  }
 }
 
 .main-footer__phone {
@@ -42,4 +79,17 @@
 
 .main-footer__copyright {
   margin-top: 15px;
+}
+
+.main-footer__dev {
+  font-size: 13px;
+  line-height: 16px;
+  color: $grey;
+  display: block;
+  width: max-content;
+  margin: 10px auto 0 auto;
+
+  @media (min-width: $desktop) {
+    margin: 0 0 0 auto;
+  }
 }

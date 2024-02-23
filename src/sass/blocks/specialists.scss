@@ -13,9 +13,53 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 20px;
   list-style: none;
   margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+  }
+}
+
+.specialists__specialist-item {
+  position: relative;
+  padding: 50px 20px 10px 20px;
+  border: 1px solid $blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    width: 40px;
+    height: 40px;
+    background-image: url("/src/icons/team.svg");
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet) {
+    width: 400px;
+    padding: 20px 20px 20px 80px;
+
+    &::before {
+      top: 25px;
+      left: 20px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+
+    &:nth-of-type(1) {
+      margin-left: auto;
+    }
+
+    &:nth-of-type(3) {
+      margin-right: auto;
+    }
+  }
 }
 
 .specialists__specialist-description {

@@ -12,12 +12,6 @@ export default {
         'ОКВЭД 85.13',
         'Директор - Зуев Константин Евгеньевич',
       ],
-      medicalList: [
-        'первичная медико-санитарная помощь, в том числе первичная доврачебная, первичная врачебная и первичная специализированная.',
-        'специализированная, в том числе высокотехнологичная, медицинская помощь.',
-        'скорая, в том числе скорая специализированная, медицинская помощь.',
-        'паллиативная медицинская помощь, оказываемая медицинскими организациями.',
-      ],
     }
   }
 }
@@ -39,11 +33,6 @@ export default {
       <ul class="about__about-list about__about-list--legal">
         <li class="about__legal-item" v-for="li in legalInfo" v-bind:key="li">{{ li }}</li>
       </ul>
-      <!-- <h3 class="about__subtitle">О мед.помощи</h3>
-      <p class="about__description">В рамках Программы (за исключением медицинской помощи, оказываемой в рамках клинической апробации) бесплатно предоставляются:</p>
-      <ul class="about__about-list about__about-list--help">
-        <li class="about__help-item" v-for="li in medicalList" v-bind:key="li">{{ li }}</li>
-      </ul> -->
     </div>
   </section>
 </template>
