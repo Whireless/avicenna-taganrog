@@ -4,10 +4,10 @@
 
   export default {
     setup() {
-      const { menu } = storeToRefs(useGlobalStore());
+      const { menuStatus } = storeToRefs(useGlobalStore());
       const { navList, mobileMenu } = useGlobalStore();
       return {
-        menu,
+        menuStatus,
         navList,
         mobileMenu,
       }
@@ -20,14 +20,14 @@
     <nav class="main-nav">
       <router-link to="/home" class="main-nav__logo" aria-label="Логотип нашей стоматологии" @click="mobileMenu(true)"></router-link>
       <p class="main-nav__title">АвиценнА</p>
-      <ul :class="['main-nav__nav-list', menu.status === 1 ? menu.navClass : '']">
+      <ul :class="['main-nav__nav-list', {'main-nav__nav-list--open' : menuStatus}]">
         <li class="main-nav__nav-item"
             v-for="li in navList"
             :key="li">
           <router-link :to="li.href"
                         class="main-nav__nav-link"
                         active-class="main-nav__nav-link--active"
-                        @click="mobileMenu()">
+                        @click="mobileMenu(true)">
                         {{ li.name }}
           </router-link>
         </li>

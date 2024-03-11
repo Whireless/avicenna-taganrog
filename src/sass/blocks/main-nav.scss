@@ -27,6 +27,11 @@
   background-image: url("/src/icons/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  transition: $t05;
+
+  &:hover {
+    opacity: $op06;
+  }
 
   @media (min-width: $desktop) {
    width: 50px;
