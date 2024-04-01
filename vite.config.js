@@ -9,7 +9,7 @@ import vue from '@vitejs/plugin-vue';
 // const SVG_FOLDER_PATH = path.resolve(SRC_PATH, 'icons');
 
 export default defineConfig({
-  // base: '/stomatology', // Github
+  base: '/stomatology', // Github
   server: {
     open: true,
   },

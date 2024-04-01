@@ -137,15 +137,15 @@ export const useGlobalStore = defineStore('globalStore', {
     // Фотографии клиник
 
     clinicPhoto: [
-      { src: '/img/photo/photo1.jpeg', alt: '', },
-      { src: '/img/photo/photo2.jpeg', alt: '', },
-      { src: '/img/photo/photo3.jpeg', alt: '', },
-      { src: '/img/photo/photo4.jpeg', alt: '', },
-      { src: '/img/photo/photo5.jpeg', alt: '', },
-      { src: '/img/photo/photo6.jpeg', alt: '', },
-      { src: '/img/photo/photo7.jpeg', alt: '', },
-      { src: '/img/photo/photo8.jpeg', alt: '', },
-      { src: '/img/photo/photo9.jpeg', alt: '', },
+      { src: 'img/photo/photo1.jpeg', alt: '', },
+      { src: 'img/photo/photo2.jpeg', alt: '', },
+      { src: 'img/photo/photo3.jpeg', alt: '', },
+      { src: 'img/photo/photo4.jpeg', alt: '', },
+      { src: 'img/photo/photo5.jpeg', alt: '', },
+      { src: 'img/photo/photo6.jpeg', alt: '', },
+      { src: 'img/photo/photo7.jpeg', alt: '', },
+      { src: 'img/photo/photo8.jpeg', alt: '', },
+      { src: 'img/photo/photo9.jpeg', alt: '', },
     ],
 
     // Список основной информации

@@ -44,7 +44,6 @@
       <h3 class="about__subtitle about__subtitle--photos">Фотографии</h3>
       <p class="about__description">Наша небольшая фото-галерея</p>
       <swiper :modules="modules"
-              :options="swiperOption"
               :space-between="40"
               :pagination="true"
               :speed="600"
