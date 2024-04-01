@@ -1,0 +1,54 @@
+.swiper {
+  display: grid;
+  width: 335px;
+  height: 280px;
+  margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+    height: 480px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 980px;
+    height: 600px;
+  }
+}
+
+.swiper-wrapper {
+  height: 270px;
+
+  @media (min-width: $tablet) {
+    height: 475px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 580px;
+  }
+}
+
+.swiper-pagination {
+  justify-self: center;
+  position: absolute;
+  display: flex;
+  column-gap: 6px;
+  background-color: $blue;
+  width: max-content;
+  top: auto;
+  left: auto;
+  bottom: 0px;
+  margin: 0 auto;
+  padding: 3px 5px;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet {
+  background-color: $white;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+
+  &-active {
+    background-color: $black;
+  }
+}

@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import index from './components/index.vue';
 import about from './components/about.vue';
-import workTime from './components/worktime.vue';
+import information from './components/information.vue';
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -11,6 +11,6 @@ export default createRouter({
   routes: [
     { path: '/home', component: index, alias: '/' },
     { path: '/about', component: about },
-    { path: '/worktime', component: workTime },
+    { path: '/information', component: information },
   ],
 });

@@ -10,7 +10,6 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   base: '/stomatology', // Github
-  // base: '/', // Dev и Хостинг
   server: {
     open: true,
   },

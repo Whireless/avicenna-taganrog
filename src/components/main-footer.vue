@@ -15,6 +15,7 @@
   <footer class="main-footer">
     <div class="container">
       <section class="main-footer__info">
+        <p class="main-footer__search">Нас можно найти по адресу:</p>
         <article class="main-footer__geo-info">
           <article class="main-footer__location" v-for="location in locationList" :key="location">
             <p class="main-footer__adress">{{ location.adress }}</p>

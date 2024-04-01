@@ -2,14 +2,15 @@
 import intro from './index/intro.vue';
 import services from './index/services.vue';
 import trust from './index/trust.vue';
-import specialists from './index/specialists.vue';
+import worktime from './index/worktime.vue';
+
 
 export default {
   components: {
     intro,
     services,
     trust,
-    specialists,
+    worktime,
   },
 }
 </script>
@@ -19,6 +20,6 @@ export default {
     <intro></intro>
     <services></services>
     <trust></trust>
-    <specialists></specialists>
+    <worktime></worktime>
   </main>
 </template>

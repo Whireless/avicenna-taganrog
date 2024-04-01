@@ -1,12 +1,12 @@
 .container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 
   @media (min-width: $tablet) {
-    padding: 25px 50px;
+    padding: 55px 50px;
   }
 
   @media (min-width: $desktop) {
-    padding: 40px 100px;
+    padding: 70px 100px;
   }
 }

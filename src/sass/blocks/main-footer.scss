@@ -4,10 +4,27 @@
 }
 
 .main-footer__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  @media (min-width: $tablet) {
+    row-gap: 15px;
+  }
+
   @media (min-width: $desktop) {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.main-footer__search {
+  font-weight: bold;
+
+  @media (min-width: $desktop) {
+    flex-basis: 100%;
   }
 }
 
@@ -55,10 +72,6 @@
   &:hover {
     opacity: $op06;
   }
-}
-
-.main-footer__copyright {
-  margin-top: 15px;
 }
 
 .main-footer__dev {

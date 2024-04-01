@@ -41,6 +41,10 @@
   @media (min-width: $tablet) {
     margin-top: 15px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 20px;
+  }
 }
 
 .intro__description {
@@ -49,25 +53,40 @@
   @media (min-width: $tablet) {
     margin-top: 25px;
   }
-}
 
-.intro__go-heal {
-  color: $white;
-  text-decoration: none;
-  display: block;
-  background-color: $blue;
-  width: max-content;
-  margin-top: 25px;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: $t05;
-
-  &:hover {
-    opacity: $op06;
+  @media (min-width: $desktop) {
+    width: 870px;
+    margin-top: 30px;
   }
 }
+
+// .intro__go-heal {
+//   font-size: 14px;
+//   color: $white;
+//   text-decoration: none;
+//   display: block;
+//   background-color: $blue;
+//   width: max-content;
+//   margin-top: 25px;
+//   padding: 15px 25px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: $t05;
+
+//   &:hover {
+//     opacity: $op06;
+//   }
+
+//   @media (min-width: $tablet) {
+//     font-size: 16px;
+//     margin-top: 30px;
+//   }
+
+//   @media (min-width: $desktop) {
+//     margin-top: 35px;
+//   }
+// }
 
 .intro__advantages {
   margin-top: 35px;
