@@ -33,14 +33,6 @@
           <p class="about__description">{{ specialist.description }}</p>
         </li>
       </ul>
-      <h3 class="about__subtitle about__subtitle--manager">Руководители</h3>
-      <p class="about__description">Список руководителей стоматологий</p>
-      <ul class="about__list about__list--manager">
-        <li class="about__item" v-for="manager in managerList" :key="manager">
-          <h3 class="about__specialist-name">{{ manager.name }}</h3>
-          <p class="about__description">{{ manager.description }}</p>
-        </li>
-      </ul>
       <h3 class="about__subtitle about__subtitle--photos">Фотографии</h3>
       <p class="about__description">Наша небольшая фото-галерея</p>
       <swiper :modules="modules"
