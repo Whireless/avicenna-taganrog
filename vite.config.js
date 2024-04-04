@@ -19,6 +19,9 @@ export default defineConfig({
   plugins: [
     vue(),
     ViteImageOptimizer({
+      jpeg: {
+        quality: 75,
+      },
       png: {
         quality: 75,
       },

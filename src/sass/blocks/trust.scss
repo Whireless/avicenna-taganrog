@@ -8,7 +8,7 @@
   width: max-content;
 }
 
-.trust__intro {
+.trust__description {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -83,10 +83,30 @@
   }
 }
 
-.trust__description {
+.trust__info-description {
   margin-top: 10px;
 
   @media (min-width: $tablet) {
     margin-top: 20px;
+  }
+}
+
+.trust__feedback {
+  position: relative;
+  width: 335px;
+  height: 730px;
+  margin: 30px auto 0 auto;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+    height: 700px;
+    margin: 40px auto 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 760px;
+    height: 690px;
+    margin: 50px auto 0 auto;
   }
 }

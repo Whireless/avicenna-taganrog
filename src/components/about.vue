@@ -34,7 +34,7 @@
         </li>
       </ul>
       <h3 class="about__subtitle about__subtitle--photos">Фотографии</h3>
-      <p class="about__description">Наша небольшая фото-галерея</p>
+      <p class="about__description">Фото-галерея наших клиник</p>
       <swiper :modules="modules"
               :space-between="40"
               :pagination="true"

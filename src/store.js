@@ -122,7 +122,7 @@ export const useGlobalStore = defineStore('globalStore', {
 
     specialistsList: [
       { name: 'Бевза Ольга Викторовна', description: 'Зубной врач', },
-      { name: 'Маммадов Камран Магерам Оглы', description: 'Врач - стоматолог', },
+      { name: 'Маммадов Камран Магерам Оглы', description: 'Врач - стоматолог (Глав.врач)', },
       { name: 'Мамедли Канан Магерам', description: 'Врач - стоматолог', },
     ],
 

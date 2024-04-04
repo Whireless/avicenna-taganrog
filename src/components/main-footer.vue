@@ -22,6 +22,7 @@
             <a class="main-footer__phone" :href="`tel:${location.phone}`">{{ location.phone }}</a>
           </article>
         </article>
+        <iframe class="main-footer__rating" src="https://yandex.ru/sprav/widget/rating-badge/157213945902?type=rating" width="150" height="50" frameborder="0"></iframe>
         <p class="main-footer__copyright">© Стоматология ООО "АвиценнА"</p>
       </section>
       <span class="main-footer__dev">dev: <a href="https://github.com/Whireless" title="Разработчик">whireless</a></span>
