@@ -3,6 +3,22 @@
   border-top: 1px solid $blue;
 }
 
+.main-footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main-footer__link {
+  text-decoration: none;
+  color: $blue;
+  transition: $t03;
+
+  &:hover {
+    opacity: $op06;
+  }
+}
+
 .main-footer__info {
   display: flex;
   flex-direction: column;
@@ -22,9 +38,15 @@
 
 .main-footer__search {
   font-weight: bold;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
 
   @media (min-width: $desktop) {
     flex-basis: 100%;
+    margin-top: 25px;
   }
 }
 
@@ -67,7 +89,7 @@
 .main-footer__phone {
   text-decoration: none;
   color: $blue;
-  transition: $t05;
+  transition: $t03;
 
   &:hover {
     opacity: $op06;

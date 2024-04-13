@@ -1,16 +1,16 @@
 .intro {
-  margin-top: 71px;
+  margin-top: 62px;
   background-image: url("/img/intro-bg.png");
   background-position: 70%;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet) {
-    margin-top: 81px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop) {
-   margin-top: 101px;
+   margin-top: 95px;
   }
 }
 
@@ -108,9 +108,13 @@
 .intro__advantages-item {
   text-align: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(100%, 100%, 100%, 0.9);
   width: 290px;
   padding: 50px 20px 15px 20px;
+  border-radius: 20px;
 
   &::before {
     content: "";

@@ -1,12 +1,12 @@
 .about {
-  margin-top: 71px;
+  margin-top: 62px;
 
   @media (min-width: $tablet) {
-    margin-top: 81px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 101px;
+    margin-top: 95px;
   }
 }
 
@@ -59,9 +59,14 @@
 
 .about__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  row-gap: 15px;
   width: 293px;
   padding: 50px 20px 10px 20px;
   border: 1px solid $blue;
+  border-radius: 20px;
 
   &::before {
     content: "";
@@ -75,8 +80,10 @@
   }
 
   @media (min-width: $tablet) {
+    row-gap: 20px;
     width: 270px;
-    height: 115px;
+    // height: 115px;
+    height: 100px;
     padding: 80px 20px 20px 20px;
 
     &::before {
@@ -85,7 +92,9 @@
   }
 
   @media (min-width: $desktop) {
+    row-gap: 25px;
     width: 360px;
+    height: 91px;
     // height: 80px;
   }
 }

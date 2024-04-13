@@ -21,6 +21,7 @@
           {{ li.day }}<span>{{ li.time }}</span>
         </li>
       </ul>
+      <h3 class="worktime__go">Приходите лечить зубы к нам, и озарите этот мир здоровой улыбкой!</h3>
     </div>
   </section>
 </template>

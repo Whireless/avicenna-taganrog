@@ -3,9 +3,10 @@
 
   export default {
     setup() {
-      const { locationList } = useGlobalStore();
+      const { locationList, footerNav } = useGlobalStore();
       return {
         locationList,
+        footerNav,
       }
     },
   }
@@ -14,6 +15,9 @@
 <template>
   <footer class="main-footer">
     <div class="container">
+      <article class="main-footer__links">
+        <router-link class="main-footer__link" v-for="link in footerNav" :key="link" :to="link.href">{{ link.name }}</router-link>
+      </article>
       <section class="main-footer__info">
         <p class="main-footer__search">Нас можно найти по адресу:</p>
         <article class="main-footer__geo-info">

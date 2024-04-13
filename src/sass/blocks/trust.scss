@@ -29,6 +29,7 @@
   width: 309px;
   margin: 0 auto;
   padding: 55px 13px 13px 13px;
+  border-radius: 20px;
 
   &+.trust__info {
     margin-top: 20px;
@@ -67,11 +68,16 @@
 
     &::before {
       font-size: 30px;
+      left: 19px;
     }
   }
 
   @media (min-width: $desktop) {
     padding: 70px 25px 25px 25px;
+
+    &::before {
+      left: 24px;
+    }
 
     &--one {
       margin: 0 auto 0 0;

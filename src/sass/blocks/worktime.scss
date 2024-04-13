@@ -49,3 +49,16 @@
     padding-bottom: 5px;
   }
 }
+
+.worktime__go {
+  text-align: center;
+  margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    margin-top: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+  }
+}

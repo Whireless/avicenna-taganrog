@@ -43,12 +43,13 @@
   align-items: center;
   row-gap: 15px;
   width: 300px;
-  padding: 10px;
+  padding: 13px 10px;
   border: 1px solid $blue;
+  border-radius: 20px;
 
   @media (min-width: $tablet) {
     width: 290px;
-    padding: 15px;
+    padding: 18px 15px;
 
     .service__details {
       &[open] {
@@ -59,7 +60,7 @@
 
   @media (min-width: $desktop) {
     width: 310px;
-    padding: 20px;
+    padding: 23px 20px;
     align-self: start;
   }
 }

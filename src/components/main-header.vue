@@ -19,6 +19,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <router-link to="/home" class="main-nav__logo" aria-label="Логотип нашей стоматологии" @click="mobileMenu(true)">АвиценнА</router-link>
+      <a class="main-nav__tel" href="tel:+79185662020">+7 (918) 566-20-20</a>
       <ul :class="['main-nav__nav-list', {'main-nav__nav-list--open' : menuStatus}]">
         <li class="main-nav__nav-item"
             v-for="li in navList"

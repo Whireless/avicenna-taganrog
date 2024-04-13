@@ -6,10 +6,11 @@
 
   export default {
     setup() {
-      const { specialistsList, managerList, clinicPhoto } = useGlobalStore();
+      const { specialistsList, adminsList, managersList, clinicPhoto } = useGlobalStore();
       return {
         specialistsList,
-        managerList,
+        adminsList,
+        managersList,
         clinicPhoto,
         modules: [Navigation, Pagination, Autoplay],
       }
@@ -30,7 +31,23 @@
       <ul class="about__list about__list--specialists">
         <li class="about__item" v-for="specialist in specialistsList" :key="specialist">
           <h3 class="about__specialist-name">{{ specialist.name }}</h3>
-          <p class="about__description">{{ specialist.description }}</p>
+          <p class="about__specialist-status">{{ specialist.description }}</p>
+        </li>
+      </ul>
+      <h3 class="about__subtitle about__subtitle--admins">Администраторы</h3>
+      <p class="about__description">Наши администраторы готовы помочь вам с любым вопросом</p>
+      <ul class="about__list about__list--admins">
+        <li class="about__item" v-for="admin in adminsList" :key="admin">
+          <h3 class="about__specialist-name">{{ admin.name }}</h3>
+          <p class="about__specialist-status">{{ admin.description }}</p>
+        </li>
+      </ul>
+      <h3 class="about__subtitle about__subtitle--managers">Руководители</h3>
+      <p class="about__description">Список руководителей наших клиник</p>
+      <ul class="about__list about__list--managers">
+        <li class="about__item" v-for="manager in managersList" :key="manager">
+          <h3 class="about__specialist-name">{{ manager.name }}</h3>
+          <p class="about__specialist-status">{{ manager.description }}</p>
         </li>
       </ul>
       <h3 class="about__subtitle about__subtitle--photos">Фотографии</h3>
