@@ -9,4 +9,9 @@
   @media (min-width: $desktop) {
     padding: 70px 100px;
   }
+
+  @media (min-width: $laptop) {
+    padding: 85px 120px;
+
+  }
 }

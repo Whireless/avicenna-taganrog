@@ -18,6 +18,10 @@
   @media (min-width: $desktop) {
     padding: 25px 100px;
   }
+
+  @media (min-width: $laptop) {
+    padding: 30px 120px;
+  }
 }
 
 .main-nav__logo {

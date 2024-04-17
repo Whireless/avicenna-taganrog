@@ -8,6 +8,10 @@
   @media (min-width: $desktop) {
     margin-top: 95px;
   }
+
+  @media (min-width: $laptop) {
+    margin-top: 106px;
+  }
 }
 
 .information__title {

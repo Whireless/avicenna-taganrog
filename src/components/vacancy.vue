@@ -1,5 +1,6 @@
 <script>
   import { useGlobalStore } from '../store';
+
   export default {
     setup() {
       const { vacanciesList, jobAdvantage } = useGlobalStore();
