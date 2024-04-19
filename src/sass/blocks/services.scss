@@ -108,7 +108,7 @@
     content: "";
     position: absolute;
     right: -25px;
-    background-image: url("/src/icons/arrow.svg");
+    background-image: url("/img/icons/arrow.svg");
     background-size: contain;
     width: 20px;
     height: 20px;
@@ -117,37 +117,37 @@
 
   &--general {
     &::before {
-      background-image: url("/src/icons/services/general.svg");
+      background-image: url("/img/icons/services/general.svg");
     }
   }
 
   &--prostheses {
     &::before {
-      background-image: url("/src/icons/services/prostheses.svg");
+      background-image: url("/img/icons/services/prostheses.svg");
     }
   }
 
   &--caries {
     &::before {
-      background-image: url("/src/icons/services/caries.svg");
+      background-image: url("/img/icons/services/caries.svg");
     }
   }
 
   &--perodontitis {
     &::before {
-      background-image: url("/src/icons/services/perodontitis.svg");
+      background-image: url("/img/icons/services/perodontitis.svg");
     }
   }
 
   &--pulpitis {
     &::before {
-      background-image: url("/src/icons/services/pulpitis.svg");
+      background-image: url("/img/icons/services/pulpitis.svg");
     }
   }
 
   &--crowns {
     &::before {
-      background-image: url("/src/icons/services/crowns.svg");
+      background-image: url("/img/icons/services/crowns.svg");
     }
   }
 

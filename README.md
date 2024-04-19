@@ -1,4 +1,4 @@
-# stomatology
+# avicenna-taganrog
 
 <br>
 
