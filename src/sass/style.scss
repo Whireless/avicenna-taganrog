@@ -1,31 +1,4 @@
-@import "variables.scss";
 @import "animations.scss";
 @import "global.scss";
 @import "container.scss";
-@import "blocks/main-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/main-footer.scss";
-
-// Главная
-
-@import "blocks/intro.scss";
-@import "blocks/services.scss";
-@import "blocks/trust.scss";
-@import "blocks/worktime.scss";
 @import "swiper.scss";
-
-// О клинике
-
-@import "blocks/about.scss";
-
-// Акции
-
-@import "blocks/actions.scss";
-
-// Вакансии
-
-@import "blocks/vacancy.scss";
-
-// Информация
-
-@import "blocks/information.scss";

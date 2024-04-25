@@ -27,3 +27,56 @@
     </div>
   </section>
 </template>
+
+.<style lang="scss">
+.information {
+  margin-top: 62px;
+
+  @media (min-width: $tablet) {
+    margin-top: 72px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 95px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 106px;
+  }
+}
+
+.information__title {
+  color: $darkblue;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.information__subtitle {
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+  }
+}
+
+.information__list {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 10px;
+  border-left: 2px solid $blue;
+
+  @media (min-width: $desktop) {
+    margin-top: 25px;
+  }
+}
+
+.information__description {
+  margin-top: 10px;
+}
+</style>
