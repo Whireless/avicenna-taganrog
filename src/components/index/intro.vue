@@ -17,7 +17,7 @@
       <article class="intro__info">
         <h1 class="intro__title">Стоматология АвиценнА</h1>
         <p class="intro__subtitle">Лечение зубов в тот же день</p>
-        <p class="intro__description">Мы проведем полную консультацию, профессиональную гигиену полости рта, лечение зубов и десен</p>
+        <p class="intro__description">Мы проводим полную консультацию, профессиональную гигиену полости рта, лечение зубов и десен.</p>
         <!-- <router-link to="/" class="intro__go-heal">Записаться на приём</router-link> -->
       </article>
       <article class="intro__advantages">
@@ -51,6 +51,7 @@
 }
 
 .intro__title {
+  line-height: 36px;
   font-weight: 300;
   position: relative;
   margin-top: 60px;
@@ -84,6 +85,7 @@
 }
 
 .intro__description {
+  text-align: justify;
   margin-top: 20px;
 
   @media (min-width: $tablet) {
@@ -148,19 +150,19 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(100%, 100%, 100%, 0.9);
-  width: 290px;
-  padding: 50px 20px 15px 20px;
+  width: 305px;
+  padding: 60px 20px 15px 20px;
   border-radius: 20px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 150px;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
   }
 
   &--team {
@@ -183,11 +185,11 @@
 
   @media (min-width: $tablet) {
     font-size: 15px;
-    width: 170px;
+    width: 180px;
     height: 70px;
 
     &::before {
-      left: 90px;
+      left: 95px;
     }
   }
 
@@ -197,7 +199,7 @@
     height: 55px;
 
     &::before {
-      left: 150px;
+      left: 155px;
     }
   }
 }

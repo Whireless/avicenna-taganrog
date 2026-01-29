@@ -42,16 +42,16 @@
           <p class="about__specialist-status">{{ admin.description }}</p>
         </li>
       </ul>
-      <h3 class="about__subtitle about__subtitle--managers">Руководители</h3>
+      <!-- <h3 class="about__subtitle about__subtitle--managers">Руководители</h3>
       <p class="about__description">Список руководителей наших клиник</p>
       <ul class="about__list about__list--managers">
         <li class="about__item" v-for="manager in managersList" :key="manager">
           <h3 class="about__specialist-name">{{ manager.name }}</h3>
           <p class="about__specialist-status">{{ manager.description }}</p>
         </li>
-      </ul>
+      </ul> -->
       <h3 class="about__subtitle about__subtitle--photos">Фотографии</h3>
-      <p class="about__description">Фото-галерея наших клиник</p>
+      <p class="about__description">Фото-галерея нашей клиники:</p>
       <swiper :modules="modules"
               :space-between="40"
               :pagination="true"

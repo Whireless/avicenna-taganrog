@@ -217,14 +217,17 @@ export const useGlobalStore = defineStore('globalStore', {
 
     vacanciesList: [
       {
+        img: '/img/Стоматолог.jpg',
         type: 'Врач - стоматолог',
         amount: 2,
       },
       {
+        img: '/img/Медсестра.jpg',
         type: 'Медсестра',
         amount: 1,
       },
       // {
+      //   img: '',
       //   type: 'Администратор',
       //   amount: 0,
       // },

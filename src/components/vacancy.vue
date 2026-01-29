@@ -18,6 +18,7 @@
       <p class="vacancy__description">В штат нашей клиники на текущий момент требуются:</p>
       <ul class="vacancy__list vacancy__list--vacancies">
         <li class="vacancy__item vacancy__item--vacancies" v-for="vacancy in vacanciesList" :key="vacancy">
+          <img class="vacancy__img" :src="vacancy.img" width="280" height="280" alt="">
           <p class="vacancy__type">{{ vacancy.type }}</p>
           <p class="vacancy__number">Требуется специалистов: <span class="vacancy__amount">{{ vacancy.amount }}</span></p>
         </li>
@@ -75,7 +76,7 @@
   &--vacancies {
     align-content: center;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 40px;
   }
 
   &--advantage {
@@ -110,16 +111,14 @@
   row-gap: 10px;
 
   &--vacancies {
-    font-size: 16px;
     text-align: center;
     width: max-content;
-    padding: 10px 20px;
-    border: 1px solid $blue;
-    border-radius: 20px;
+    // padding: 15px 25px;
+    // border: 1px solid $blue;
+    // border-radius: 30px;
   }
 
   &--advantage {
-    font-size: 14px;
     position: relative;
     padding-left: 20px;
 
@@ -133,7 +132,8 @@
   @media (min-width: $tablet) {
     &--vacancies {
       font-size: 18px;
-      padding: 15px 25px;
+      row-gap: 12px;
+      // padding: 20px 30px;
     }
 
     &--advantage {
@@ -145,7 +145,7 @@
   @media (min-width: $desktop) {
     &--vacancies {
       font-size: 21px;
-      padding: 20px 30px;
+      // padding: 25px 35px;
     }
 
     &--advantage {
@@ -155,20 +155,35 @@
   }
 }
 
+.vacancy__img {
+  object-fit: cover;
+  border-radius: 30px;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 .vacancy__type {
   font-weight: bold;
   align-self: center;
   width: max-content;
-  padding: 2px 10px;
+  padding: 5px 15px;
   border: 1px solid $blue;
-  border-radius: 20px;
+  border-radius: 30px;
 
   @media (min-width: $tablet) {
-    padding: 3px 15px;
+    padding: 10px 20px;
   }
 
   @media (min-width: $desktop) {
-    padding: 5px 17px;
+    padding: 10px 25px;
   }
 }
 

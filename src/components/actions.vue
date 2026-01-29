@@ -100,15 +100,15 @@
 
 .actions__subtitle {
   border: 1px solid $blue;
-  padding: 4px 7px;
-  border-radius: 20px;
+  padding: 10px 15px;
+  border-radius: 30px;
 
   @media (min-width: $tablet) {
-    padding: 5px 10px;
+    padding: 15px 20px;
   }
 
   @media (min-width: $desktop) {
-    padding: 7px 15px;
+    padding: 15px 25px;
   }
 }
 

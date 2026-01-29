@@ -54,16 +54,16 @@
   align-items: center;
   justify-content: space-between;
   background-color: $white;
-  padding: 15px 20px;
+  padding: 15px;
   border-bottom: 1px solid $blue;
   z-index: 2;
 
   @media (min-width: $tablet) {
-    padding: 20px 50px;
+    padding: 20px 35px;
   }
 
   @media (min-width: $desktop) {
-    padding: 25px 100px;
+    padding: 25px 90px;
   }
 
   @media (min-width: $laptop) {
@@ -176,7 +176,7 @@
   @media (min-width: $tablet) {
     position: static;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 30px;
     height: auto;
     padding: 0;
     transform: scale(1);
@@ -184,7 +184,7 @@
   }
 
   @media (min-width: $desktop) {
-    column-gap: 40px;
+    column-gap: 50px;
   }
 }
 
@@ -223,7 +223,7 @@
     font-size: 16px;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 50px;
 
     &::before {
@@ -233,7 +233,7 @@
 
   @media (min-width: $desktop) {
     font-size: 19px;
-    padding: 8px;
+    padding: 8px 15px;
   }
 }
 

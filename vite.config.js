@@ -27,10 +27,13 @@ export default defineConfig({
     vue(),
     ViteImageOptimizer({
       jpeg: {
-        quality: 75,
+        quality: 70,
+      },
+      jpg: {
+        quality: 70,
       },
       png: {
-        quality: 75,
+        quality: 70,
       },
     }),
     // createSvgSpritePlugin({
